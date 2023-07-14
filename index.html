@@ -23,9 +23,15 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        />
         <title>Document</title>
     </head>
     <body>
+        <script src="index.js"></script>
         <header class="main-header">
             <!-- Шапка сайта -->
             <img class="bg" src="images/bg-header-text.svg" alt="None img" />
@@ -69,9 +75,10 @@
                     </div>
                 </div>
                 <div class="container-contactUs">
-                    <div class="contactUs-title">
+                    <h2>Contact Us</h2>
+                    <!-- <div class="contactUs-title">
                         <p>Contact Us</p>
-                    </div>
+                    </div> -->
                     <nav class="contact-nav">
                         <a class="contact-nav__item" href="#"
                             >Lorem ipsum dolor sit amet.</a
@@ -152,7 +159,7 @@
                     <button class="btn">I need help</button>
                 </div>
                 <div class="main-services">
-                    <h3>Services</h3>
+                    <h2>Services</h2>
                     <div class="services-content">
                         <div class="services-content__item">
                             <img
@@ -161,7 +168,7 @@
                                 alt=""
                             />
                             <div class="services-content__text">
-                                <h5>Lorem, ipsum</h5>
+                                <h3>Lorem, ipsum</h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry. Lorem
@@ -178,7 +185,7 @@
                                 alt=""
                             />
                             <div class="services-content__text">
-                                <h5>Lorem, ipsum</h5>
+                                <h3>Lorem, ipsum</h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry. Lorem
@@ -195,7 +202,7 @@
                                 alt=""
                             />
                             <div class="services-content__text">
-                                <h5>Lorem, ipsum</h5>
+                                <h3>Lorem, ipsum</h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry. Lorem
@@ -212,13 +219,16 @@
                     <h4>Testymonials</h4>
                     <div class="testymonials-content">
                         <div class="testymonials-content__item">
-                            <img
-                                class="img__avatar"
-                                src="images/avatar.png"
-                                alt=""
-                            />
+                            <div class="testymonials-content__user">
+                                <img
+                                    class="img__avatar"
+                                    src="images/avatar.png"
+                                    alt=""
+                                />
+                                <h5>Lorem, ipsum</h5>
+                            </div>
+
                             <div class="testymonials-content__text">
-                                <h6>Lorem, ipsum</h6>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry. Lorem
@@ -236,13 +246,15 @@
                             </div>
                         </div>
                         <div class="testymonials-content__item">
-                            <img
-                                class="img__avatar"
-                                src="images/avatar.png"
-                                alt=""
-                            />
+                            <div class="testymonials-content__user">
+                                <img
+                                    class="img__avatar"
+                                    src="images/avatar.png"
+                                    alt=""
+                                />
+                                <h5>Lorem, ipsum</h5>
+                            </div>
                             <div class="testymonials-content__text">
-                                <h6>Lorem, ipsum</h6>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry. Lorem
@@ -260,13 +272,15 @@
                             </div>
                         </div>
                         <div class="testymonials-content__item">
-                            <img
-                                class="img__avatar"
-                                src="images/avatar.png"
-                                alt=""
-                            />
+                            <div class="testymonials-content__user">
+                                <img
+                                    class="img__avatar"
+                                    src="images/avatar.png"
+                                    alt=""
+                                />
+                                <h5>Lorem, ipsum</h5>
+                            </div>
                             <div class="testymonials-content__text">
-                                <h6>Lorem, ipsum</h6>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry. Lorem
@@ -284,13 +298,15 @@
                             </div>
                         </div>
                         <div class="testymonials-content__item">
-                            <img
-                                class="img__avatar"
-                                src="images/avatar.png"
-                                alt=""
-                            />
+                            <div class="testymonials-content__user">
+                                <img
+                                    class="img__avatar"
+                                    src="images/avatar.png"
+                                    alt=""
+                                />
+                                <h5>Lorem, ipsum</h5>
+                            </div>
                             <div class="testymonials-content__text">
-                                <h6>Lorem, ipsum</h6>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry. Lorem
@@ -310,11 +326,77 @@
                     </div>
                     <button class="btn">I need help</button>
                 </div>
+                <div class="main-form">
+                    <form action="#" class="form">
+                        <label for="name"
+                            >Введите ваше имя
+                            <input type="text" name="name" placeholder="Имя"
+                        /></label>
+                        <input type="text" name="email" placeholder="E-Mail" />
+                        <input type="text" name="phone" placeholder="Телефон" />
+                        <input type="text" name="url" placeholder="Ваш сайт" />
+                        <input
+                            type="text"
+                            name="growth"
+                            placeholder="Ваш рост"
+                        />
+                        <label for="info">О себе</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
             </div>
         </main>
 
         <footer class="main-footer">
-            <!-- Подвал сайта -->
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quis porro eligendi minus corporis dicta dolor
+                            neque officiis? Non voluptate alias sed, laborum
+                            dolorem nesciunt ut?
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul class="footer-col__info">
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul class="footer-col__info">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul class="footer-col__info">
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
